@@ -1,5 +1,7 @@
 package ua.epam.spring.hometask.dao.daoImpl;
 
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 import ua.epam.spring.hometask.dao.AuditoriumDao;
 import ua.epam.spring.hometask.domain.Auditorium;
 
@@ -7,7 +9,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-
+@Repository
 public class AuditoriumDAOImpl implements AuditoriumDao {
 
     private Set<Auditorium> auditoriums = new HashSet<>();

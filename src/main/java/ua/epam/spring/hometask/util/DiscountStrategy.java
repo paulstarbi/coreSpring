@@ -1,11 +1,13 @@
 package ua.epam.spring.hometask.util;
 
+import org.springframework.stereotype.Component;
 import ua.epam.spring.hometask.domain.Event;
 import ua.epam.spring.hometask.domain.User;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
+@Component
 public class DiscountStrategy {
 
      public double birthdayStrategy(User user, Event event) {

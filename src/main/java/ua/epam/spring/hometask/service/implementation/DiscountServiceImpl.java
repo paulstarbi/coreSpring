@@ -1,5 +1,7 @@
 package ua.epam.spring.hometask.service.implementation;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import ua.epam.spring.hometask.domain.Event;
 import ua.epam.spring.hometask.domain.User;
 import ua.epam.spring.hometask.service.DiscountService;
@@ -9,8 +11,10 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.time.LocalDateTime;
 
+@Service("discountService")
 public class DiscountServiceImpl implements DiscountService {
 
+    @Autowired
     private DiscountStrategy discountStrategy;
 
     @Override

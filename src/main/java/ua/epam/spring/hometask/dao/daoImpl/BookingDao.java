@@ -1,10 +1,12 @@
 package ua.epam.spring.hometask.dao.daoImpl;
 
+import org.springframework.stereotype.Repository;
 import ua.epam.spring.hometask.domain.Ticket;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Repository
 public class BookingDao implements ua.epam.spring.hometask.dao.BookingDao {
 
     private Set<Ticket> tickets = new HashSet<>();

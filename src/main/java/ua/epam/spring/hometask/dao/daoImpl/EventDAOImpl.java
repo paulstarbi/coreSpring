@@ -1,11 +1,13 @@
 package ua.epam.spring.hometask.dao.daoImpl;
 
+import org.springframework.stereotype.Repository;
 import ua.epam.spring.hometask.dao.EventDao;
 import ua.epam.spring.hometask.domain.Event;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
+@Repository
 public class EventDAOImpl implements EventDao {
 
     private final Collection<Event> events = new ArrayList<>();
