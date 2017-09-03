@@ -2,7 +2,7 @@ package ua.epam.spring.hometask.service.implementation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ua.epam.spring.hometask.dao.daoImpl.BookingDao;
+import ua.epam.spring.hometask.dao.daoImpl.BookingDaoImpl;
 import ua.epam.spring.hometask.domain.*;
 import ua.epam.spring.hometask.service.BookingService;
 import ua.epam.spring.hometask.service.DiscountService;
@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 public class BookingServiceImpl implements BookingService {
 
     @Autowired
-    private BookingDao bookingDAO;
+    private BookingDaoImpl bookingDAO;
     @Autowired
     private DiscountService discountService;
 
@@ -66,7 +66,7 @@ public class BookingServiceImpl implements BookingService {
                 .collect(Collectors.toSet());
     }
 
-    public void setBookingDAO(BookingDao bookingDAO) {
+    public void setBookingDAO(BookingDaoImpl bookingDAO) {
         this.bookingDAO = bookingDAO;
     }
 
@@ -74,7 +74,7 @@ public class BookingServiceImpl implements BookingService {
         this.discountService = discountService;
     }
 
-    public BookingDao getBookingDAO() {
+    public BookingDaoImpl getBookingDAO() {
         return bookingDAO;
     }
 

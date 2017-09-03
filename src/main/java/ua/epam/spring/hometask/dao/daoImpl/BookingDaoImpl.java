@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Repository
-public class BookingDao implements ua.epam.spring.hometask.dao.BookingDao {
+public class BookingDaoImpl implements ua.epam.spring.hometask.dao.BookingDao {
 
     private Set<Ticket> tickets = new HashSet<>();
 
@@ -21,3 +21,4 @@ public class BookingDao implements ua.epam.spring.hometask.dao.BookingDao {
         return tickets;
     }
 }
+

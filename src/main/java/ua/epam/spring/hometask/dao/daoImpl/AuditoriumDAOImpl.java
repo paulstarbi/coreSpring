@@ -1,7 +1,6 @@
 package ua.epam.spring.hometask.dao.daoImpl;
 
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 import ua.epam.spring.hometask.dao.AuditoriumDao;
 import ua.epam.spring.hometask.domain.Auditorium;
 

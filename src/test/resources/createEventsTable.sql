@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS AIRDATES (
+  eventid NUMBER,
+  airdate TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS EVENTS (
+  id        NUMBER PRIMARY KEY,
+  eventname VARCHAR,
+  baseprice NUMBER,
+  rating    VARCHAR,
+  airdates  TIMESTAMP REFERENCES AIRDATES (eventid)
+);
+
